@@ -1,0 +1,13 @@
+# Weather App
+```
+Website to look up the weather
+```
+## Getting Started
+### Software dependencies
+- Python 3.10.11
+- Django
+
+## Run Application
+- In your terminal run:
+    - `cd weatherApp`
+    - `python manage.py runserver`

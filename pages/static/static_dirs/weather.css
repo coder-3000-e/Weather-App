@@ -1,0 +1,105 @@
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+table {
+    margin: 50px 0 20px;
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid var(--table-border);
+  }
+  
+  table th {
+    color: var(--white);
+    background: var(--darkblue);
+    padding: 20px;
+  }
+  
+  table td {
+    width: auto;
+    padding: 10px;
+  }
+  
+  table td:first-child {
+    position: relative;
+    padding-right: 60px;
+  }
+  
+  table td:first-child::before {
+    display: none;
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--black);
+  }
+  
+  table td:nth-child(2) {
+    position: relative;
+  }
+  
+  .table-credits {
+    font-size: 12px;
+  }
+
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #1abd32;
+  cursor: pointer;
+}
+
+.input-group-btn button {
+  background-color: #2e5844;
+  color: #fff;
+  border: none;
+  border-radius: 2px 5px 5px 2px;
+  cursor: pointer;
+  padding: 10px 59px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.input-group-btn button:hover {
+  background-color: #0056b3;
+}

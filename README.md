@@ -15,5 +15,4 @@ In your terminal run:
 
 ## Run Application
 - In your terminal run:
-    - `cd weatherApp`
     - ` poetry run python manage.py runserver`

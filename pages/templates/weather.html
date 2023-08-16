@@ -4,7 +4,7 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'weather.css' %}">
 <script
-    src="https://maps.googleapis.com/maps/api/js?key={key}&sensor=false&amp;libraries=places"
+    src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&sensor=false&amp;libraries=places"
     type="text/javascript"></script>
 <script type="text/javascript">
     function initialize() {
@@ -46,6 +46,8 @@
                         <th>Temp min</th>
                         <th>Feels like</th>
                         <th>Humidity</th>
+                        <th>Sunrise</th>
+                        <th>Sunset</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,6 +59,8 @@
                         <td>{{ row.tempmin }}</td>
                         <td>{{ row.feelslike }}</td>
                         <td>{{ row.humidity }}</td>
+                        <td>{{ row.sunrise }}</td>
+                        <td>{{ row.sunset }}</td>
                     </tr>
                     {% endfor %}
                 </tbody>

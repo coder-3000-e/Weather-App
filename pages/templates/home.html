@@ -1,5 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
-  <h1>Welcome!</h1>
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<div class="container">
+  <h1>Welcome to the Weather App</h1>
+  <p class="body">
+      This is a weather prediction application that allows you to search for the weather forecast of a specific location.
+  </p>
+  <p class="body">
+      Simply enter the name of the place you're interested in, and our application will provide you with the upcoming weather predictions for that location.
+  </p>
+  <p class="body"> 
+      Get prepared for your day by staying informed about the weather conditions before you head out!
+  </p>
+  <a href="{% url 'weather' %}" class="btn">Get Started</a>
+</div>
 {% endblock content %}

@@ -1,0 +1,38 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.body {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.body:hover {
+    background-color: #00976b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #15573e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #048700;
+}

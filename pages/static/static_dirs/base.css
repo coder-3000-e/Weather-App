@@ -6,10 +6,11 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #2e5844;
     color: #fff;
     padding: 10px;
     text-align: center;
+    width: 100%;
 }
 
 footer {
@@ -20,11 +21,12 @@ footer {
     position: absolute;
     margin-top: 5vh;
     width: 100%;
+    flex-shrink: 0;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto !important;
     padding: 20px;
 }
 
@@ -49,6 +51,6 @@ footer {
 }
 
 .nav-menu a:hover {
-    background-color: #007bff;
+    background-color: #1c7f10;
     color: #fff;
 }
